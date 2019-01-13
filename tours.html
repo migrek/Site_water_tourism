@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400" rel="stylesheet">
+    <title>Наши маршруты</title>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center header-wrapper">
+    <nav class="container row navbar d-flex navbar-expand-lg header">
+        <a class="navbar-brand nav-link logo" href="index.html"><img src="src/pictures/logo.png" alt="logo">Белрафттур</a>
+        <div class="d-flex flex-column menu-wrapper-col">
+            
+        <ul class="d-flex align-items-center social-icons-wrapper">
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social-tel" href="tel:375296571960"><i class="fa fa-phone mr-1" aria-hidden="true"></i>+37529-657-19-60</a>
+                    <a class="nav-link nav-link-social-tel" href="tel:375336162456"><i class="fa fa-phone mr-1" aria-hidden="true"></i>+37533-616-24-56</a>
+                    <a class="nav-link nav-link-social-tel" href="mailto:belrafttour@gmail.com"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>belrafttour@gmail.com</a>
+                </li>
+            </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Меню</span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+        <ul class="navbar-nav align-items-center">
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="index.html">Главная страница</a>
+            </li>
+            <li class="nav-item nav-margin-link nav-item-active">
+                <a class="nav-link" href="tours.html">Маршруты</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="calendar.html">Календарь</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="#">Прокат</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="participants.html">Участникам</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="about.html">О нас</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+</div>
+
+<div class="container d-flex flex-column text-center">
+	<div class="column limit-width">
+        <h2 class="block-caption font-weight-bold">Наши маршруты</h2>
+        <p class="serv-item-text">Здесь Вы можете ознакомиться с нашими маршрутами.  Маршруты проходят для сборных групп в соотвествии с КАЛЕНДАРЕМ МЕРОПРИЯТИЙ.
+        Если вы хотите поехать своей компанией - мы можем организовать поход или
+        путешествие по Вашим пожеланиям в удобные для Вас сроки в интересное Вам место
+        (при условии, что Ваша компания не меньше 6 человек)!</p>
+    </div>
+    <div class="row mb-2">
+        <div class="col-sm-4">
+            <label for="tourFilterType">Тип маршрута</label>
+            <select id="tourFilterType" class="form-control">
+            <option selected>Все</option>
+
+            </select>
+        </div>
+
+        <div class="col-sm-4">
+            <label for="tourFilterDuration">Продолжительность (дней):</label>
+            <div class="d-flex flex-row mb-3">
+                <input type="text" class="form-control mr-2" id="tourDurationFrom" placeholder="от">
+                <input type="text" class="form-control"  id="tourDurationTo" placeholder="до">
+            </div>
+        </div>
+   
+        <div class="col-sm-4">
+                <label class="info-count-tours" id="countTours"></label>
+                <button type="button" class="btn col-sm-4 m-0 btn-find-tours" id="btnFindTours">Найти</button>
+            </div>
+        </div>
+
+    <div class="row" id = "toursWrapper">
+    </div>
+</div>
+
+<div class="container-fluid d-flex bg-logos">     
+    <div class="container m-auto">
+        <div class="row d-flex flex-row justify-content-between">
+            <div class="info-footer">Информация о компании. УНП... на основании того-то того-то...</div>
+        </div>
+    </div>
+</div>
+<a href="#" class="to-top">&#9650;</a>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400" rel="stylesheet">
+    <title>Календарный план походов</title>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center header-wrapper">
+    <nav class="container row navbar d-flex navbar-expand-lg header">
+        <a class="navbar-brand nav-link logo" href="index.html"><img src="src/pictures/logo.png" alt="logo">Белрафттур</a>
+        <div class="d-flex flex-column menu-wrapper-col">
+            
+        <ul class="d-flex align-items-center social-icons-wrapper">
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item nav-margin-link">
+                    <a class="nav-link nav-link-social-tel" href="tel:375296571960"><i class="fa fa-phone mr-1" aria-hidden="true"></i>+37529-657-19-60</a>
+                    <a class="nav-link nav-link-social-tel" href="tel:375336162456"><i class="fa fa-phone mr-1" aria-hidden="true"></i>+37533-616-24-56</a>
+                    <a class="nav-link nav-link-social-tel" href="mailto:belrafttour@gmail.com"><i class="fa fa-envelope mr-1" aria-hidden="true"></i>belrafttour@gmail.com</a>
+                </li>
+            </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Меню</span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+        <ul class="navbar-nav align-items-center">
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="index.html">Главная страница</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link active" href="tours.html">Маршруты</a>
+            </li>
+            <li class="nav-item nav-margin-link nav-item-active">
+                <a class="nav-link" href="calendar.html">Календарь</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="#">Прокат</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="participants.html">Участникам</a>
+            </li>
+            <li class="nav-item nav-margin-link">
+                <a class="nav-link" href="about.html">О нас</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    </div>
+</div>
+
+<div class="container justify-content-center text-center">
+    <div class="column limit-width">
+        <h2 class="block-caption font-weight-bold">Календарный план походов на 2019 год</h2>
+        <p class="serv-item-text mb-0">
+                Все маршруты - для сборных групп.
+                Если вы хотите поехать своей компанией - мы можем организовать поход или
+                путешествие по Вашим пожеланиям в удобные для Вас сроки в интересное Вам место
+                (при условии, что Ваша компания не меньше 6 человек)!</p>
+
+        <p class="serv-item-text">На протяжении всего сезона проводятся водные прогулки в Гомеле вечерами в будние
+дни. Программа согласовывается с участниками.
+Ждем Вас на наших походах, сплавах и путешествиях!</p>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <label for="tourFilterDuration">Даты начала тура (с/по):</label>
+            <div class="d-flex flex-row mb-3">
+                <input type="date" name="calendar" class="form-control mr-2" id="dateFrom" placeholder="от">
+                <input type="date" name="calendar" class="form-control"  id="dateTo" placeholder="до">
+            </div>
+        </div>
+   
+        <div class="col-md-6">
+            <label class="info-count-tours" id="countToursCalendar"></label>
+            <button type="button" class="btn col-sm-4 m-0 btn-find-tours" id="btnCountToursCalendar">Найти</button>
+        </div>
+    </div>
+
+
+    <div class="row" id = "calendarWrapper">
+    </div>
+
+</div>   
+
+<div class="container-fluid d-flex bg-logos">     
+    <div class="container m-auto">
+        <div class="row d-flex flex-row justify-content-between">
+            <div class="info-footer">Информация о компании. УНП... на основании того-то того-то...</div>
+        </div>
+    </div>
+</div>
+
+
+<a href="#" class="to-top">&#9650;</a>
+
+</body>
+</html>
