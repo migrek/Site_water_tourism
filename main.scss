@@ -4,6 +4,7 @@ $header-text-color: #ffffff;
 $add-font: 'Raleway', sans-serif;
 $main-text-color: #555555;
 $alt-text-color: #c7b299;
+$first-used-color: #20B2AA;
 $secons-used-color: #146b66;
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 a {
-    color: #20B2AA;
+    color: $first-used-color;
 }
 
 a:hover {
@@ -27,7 +28,7 @@ a:hover {
 
 .header-wrapper {
     width: 100%;
-    background-color: #20B2AA;
+    background-color: $first-used-color;
     z-index: 20;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 }
@@ -40,6 +41,7 @@ a:hover {
 
 .main-wrapper-content {
     z-index:1;
+    width: 70%;
     position: absolute;
 }
 
@@ -61,7 +63,7 @@ a:hover {
 }
 
 .nav-margin-link {
-    margin: 0 7px;
+    margin: 0 5px;
     font-size: 14px;
     list-style-type: none;
 }
@@ -150,7 +152,7 @@ a:hover {
 
 .main-p {
     font-size: 3vh;
-    line-height: 24px;
+    line-height: 4vh;
     color: $header-text-color;
 }
 
@@ -181,7 +183,7 @@ a:hover {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #20B2AA;
+    background-color: $first-used-color;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -220,10 +222,6 @@ a:hover {
     text-decoration: none;
 }
 
-.nounderline:hover {
-	text-decoration: none;
-}
-
 .servises:hover .serv-item-caption {
     color: $secons-used-color;
 }
@@ -235,7 +233,7 @@ a:hover {
 .font-icon {
     font-size: 40px;
     margin: auto;
-    color: #20B2AA;
+    color: $first-used-color;
 }
 
 .servises:hover .font-icon {
@@ -479,7 +477,7 @@ button:focus {
 
 
 .posts-caption-block {
-    border: 0.5px solid #f8f8f8;
+    border: 1px solid #f8f8f8;
     border-top: none;
     padding: 10px;
 } 
@@ -522,7 +520,7 @@ button:focus {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: linear-gradient(to bottom, white 50%, #20B2AA 50%);
+    background: linear-gradient(to bottom, white 50%, $first-used-color 50%);
     border-radius: 2px;
     height: 80px;
     width: 110px;
@@ -561,7 +559,7 @@ button:focus {
 }
 
 .wrapper-project-block:hover .calendar {
-    background: linear-gradient(to bottom, #20B2AA 50%, #146b66 50%);
+    background: linear-gradient(to bottom, $first-used-color 50%, $secons-used-color 50%);
 }
 
 .carousel-control-prev-custom, .carousel-control-next-custom {
@@ -746,7 +744,7 @@ button:focus {
 
 .info-footer {
     background-color: rgba(255, 255, 255, .6);
-    padding: 15px;
+    padding: 5px;
 }
 
 .red-font {
@@ -758,8 +756,8 @@ padding: 0.75rem 0.25rem;
 }
 
 .list-group-item.active {
-    border-color: #146b66;
-    background-color: #20B2AA;
+    border-color: $secons-used-color;
+    background-color: $first-used-color;
 }
 
 .btn-find-tours {
@@ -854,7 +852,7 @@ padding: 0.75rem 0.25rem;
        display: none;
     }
     .main-wrapper {
-        background-color: #146b66;
+        background-color: $secons-used-color;
     }
 
     .social-icons-wrapper {
